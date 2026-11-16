@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conformator</title>
+<meta name="description" content="Conformator tests open banking APIs against the standard you set, collects the evidence, supports your review and issues signed conformance reports that anyone can check.">
+<link rel="icon" type="image/svg+xml" href="img/mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Karla:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="mast-inner">
+    <div class="topbar">
+      <a href="https://www.tesobe.com"><img class="logo" alt="TESOBE" src="img/tesobe-logo.png" width="400" height="114"></a>
+      <nav class="topnav" aria-label="Sections">
+        <a href="#journey">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#talk">Contact</a>
+      </nav>
+    </div>
+    <p class="eyebrow"><img alt="" src="img/mark.svg" width="18" height="18">Conformator</p>
+    <h1>Prove that open banking APIs work as the rules say.</h1>
+    <p class="lede">Conformator gives regulators and the banks, payment service providers and third-party providers they supervise one place to <strong>test APIs against the agreed standard, review the results and issue signed conformance reports</strong>, on your own infrastructure, built on the Open Bank Project.</p>
+    <div class="hero-shot">
+      <div class="shot">
+        <div class="bar"><i></i><i></i><i></i><span>A conformance report, as anyone can check it</span></div>
+        <div class="report">
+          <p class="ref">CR-2026-7K3QX9MD</p>
+          <p class="verified">Signature valid</p>
+          <h2>Example Bank: Account information API</h2>
+          <p class="meta">Passed suite AIS-PROVIDER, version 2 · Issued 14 November 2026 · Valid until 13 November 2027</p>
+          <table>
+            <thead><tr><th>Test</th><th>What it checks</th><th>Outcome</th></tr></thead>
+            <tbody>
+              <tr><td>AIS-CONSENT-001</td><td>A consent can be created and read back</td><td><span class="outcome pass">Pass</span></td></tr>
+              <tr><td>AIS-ACC-003</td><td>Accounts are listed with a valid consent</td><td><span class="outcome pass">Pass</span></td></tr>
+              <tr><td>AIS-ACC-007</td><td>An expired consent is refused</td><td><span class="outcome pass">Pass</span></td></tr>
+              <tr><td>SEC-FAPI-012</td><td>Access tokens are bound to the client's certificate</td><td><span class="outcome pass">Pass</span></td></tr>
+              <tr><td>ORG-SEC-002</td><td>A named person is responsible for security</td><td><span class="outcome pass">Pass</span></td></tr>
+              <tr><td>AIS-TXN-010</td><td>Transactions older than 90 days</td><td><span class="outcome waived">Waived to March 2027</span></td></tr>
+            </tbody>
+          </table>
+          <p class="signed">Signed with Ed25519 · key 2026-01 · the signature can be checked without this site</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <section id="journey">
+    <div class="sechead"><h2>From the rules to a signed report</h2></div>
+    <ol class="journey">
+      <li><b>Define</b><span>Record the rules as requirements, and the tests that check each one, grouped into versioned suites.</span></li>
+      <li><b>Admit</b><span>Register each participant and give it a space of its own, kept apart from everyone else's.</span></li>
+      <li><b>Test</b><span>Participants run the suites against their own sandbox systems, whenever they like, as often as they need.</span></li>
+      <li><b>Review</b><span>Participants submit their results with evidence; reviewers assess and an independent approver decides.</span></li>
+      <li><b>Report</b><span>Approval issues a signed conformance report that anyone can check by its reference.</span></li>
+    </ol>
+  </section>
+
+  <section id="who">
+    <div class="sechead"><h2>For everyone in the ecosystem</h2></div>
+    <div class="roles">
+      <div class="role">
+        <h3>The regulator</h3>
+        <ul>
+          <li>Turn the rules into tests anyone can read</li>
+          <li>Admit participants and follow their progress</li>
+          <li>Review evidence, waivers and appeals</li>
+          <li>Issue, supersede and withdraw reports</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>Participants</h3>
+        <ul>
+          <li>Test sandbox systems at any time</li>
+          <li>See every request and response, and why a test failed</li>
+          <li>Fix, run again and submit when ready</li>
+          <li>Show customers and partners a report they can check</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>Everyone else</h3>
+        <ul>
+          <li>Read the public test catalogue</li>
+          <li>Check any report by its reference</li>
+          <li>Check a report's signature with the published key</li>
+          <li>See which version of the rules a system met</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="sechead"><h2>A closer look</h2></div>
+
+    <div class="feature">
+      <div class="text">
+        <p class="tag">Any standard</p>
+        <h3>Your rules, not ours</h3>
+        <p>Start a suite from an OBP API version, from an OpenAPI file, or from the address of one. Berlin Group, UK Open Banking, the Open Bank Project's own APIs or your national standard all work the same way. Conformator suggests the codes, names and test IDs, so a first suite takes minutes.</p>
+      </div>
+      <ul class="chips" aria-label="Standards Conformator can test">
+        <li>Berlin Group NextGenPSD2</li>
+        <li>UK Open Banking</li>
+        <li>Open Bank Project</li>
+        <li>FAPI security profile</li>
+        <li>Your national standard</li>
+        <li>Any OpenAPI document</li>
+      </ul>
+    </div>
+
+    <div class="feature flip">
+      <div class="text">
+        <p class="tag">Tests as steps</p>
+        <h3>Tests that read like the rules</h3>
+        <p>Each test is a short list of steps: send a request, check the answer, keep a value such as a consent's id for the next call. Answers are checked against the suite's OpenAPI schema too. Opey, the AI assistant, helps staff write and explain tests.</p>
+      </div>
+<pre class="code"><b>AIS-ACC-003</b>  Accounts are listed with a valid consent
+
+<i>1</i>  POST /consents
+   expect 201
+   keep consentId from the body
+
+<i>2</i>  GET /accounts
+   with Consent-ID: {{consentId}}
+   expect 200, and at least one account
+   check the answer against the OpenAPI schema</pre>
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <p class="tag">Real conditions</p>
+        <h3>Tested as a real partner would</h3>
+        <p>The runner calls each participant's system over mutual TLS, with its own certificate and as its own client, just as a third-party provider or a bank would. Security checks of authorisation servers use the OpenID Foundation's conformance suite. Every result keeps the requests and responses, with secrets hidden, so a failure explains itself.</p>
+      </div>
+      <ul class="points">
+        <li><b>Pass</b>Every step did what the test expects</li>
+        <li><b>Fail</b>The system answered, but not as it should, and the result says how</li>
+        <li><b>Blocked</b>The test could not go on, and the result says whose side stopped it</li>
+        <li><b>Reviewed</b>Evidence and organisational tests, decided by a person</li>
+      </ul>
+    </div>
+
+    <div class="feature flip">
+      <div class="text">
+        <p class="tag">Review</p>
+        <h3>Human judgement, on the record</h3>
+        <p>Some rules need a person to decide: a security policy, an audit record, a named officer. Reviewers assess the evidence, participants can ask for a time-limited waiver or appeal a result, and an approver who did not assess the submission makes the final decision. Every step is kept with who, when and why.</p>
+      </div>
+      <ul class="points">
+        <li><b>Separation of duties</b>Nobody reviews and approves the same submission</li>
+        <li><b>Waivers</b>With an end date, shown wherever the outcome is</li>
+        <li><b>Appeals</b>The only way an automated result can change</li>
+        <li><b>Audit trail</b>Decisions are added, never overwritten</li>
+      </ul>
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <p class="tag">Reports</p>
+        <h3>Reports anyone can trust</h3>
+        <p>Each report is digitally signed and has a short reference. Customers, partners and other regulators can check it on the public site, or check its signature with the published key without visiting the site at all. Reports expire, and can be superseded by a newer one or withdrawn.</p>
+      </div>
+      <ul class="points">
+        <li><b>Signed</b>Ed25519 signatures over the canonical report</li>
+        <li><b>Public</b>Anyone can check a report by its reference</li>
+        <li><b>Versioned</b>A report names the exact suite version it passed</li>
+        <li><b>Exportable</b>Results and dashboards download as CSV and JSON</li>
+      </ul>
+    </div>
+
+    <div class="feature flip">
+      <div class="text">
+        <p class="tag">Getting started</p>
+        <h3>Easy to try</h3>
+        <p>A Getting started page shows administrators, the regulator's staff and participants their steps, one at a time, with their progress so far. An example suite and a fake bank come with it, so a first run has something to pass within minutes.</p>
+      </div>
+      <ol class="journey" style="grid-template-columns:1fr">
+        <li><b>Connect Conformator to OBP-API</b><span>Done once, by an administrator.</span></li>
+        <li><b>Add the example suite</b><span>Requirements, tests and a fake bank to test.</span></li>
+        <li><b>Run it</b><span>Watch each test pass, and see why when one does not.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="obp">
+    <div class="sechead"><h2>Built on the Open Bank Project</h2></div>
+    <p class="intro">Conformator has no database of its own. Every record lives in OBP-API, so it inherits a platform that banks and regulators already trust.</p>
+    <ul class="points">
+      <li><b>A space for each participant</b>OBP-API's Roles keep each participant's data apart from every other's</li>
+      <li><b>Role-based access</b>Staff act with their own Roles, and each Role reaches only Conformator's spaces</li>
+      <li><b>Part of a sandbox</b>Runs beside the OBP sandbox, API Explorer, Portal and API Manager</li>
+      <li><b>Opey, the AI assistant</b>Helps write tests and explains results, with every conversation logged</li>
+      <li><b>On your infrastructure</b>Runs on-premises or in your cloud, with no external SaaS</li>
+      <li><b>Open source</b>Part of <a href="https://github.com/OpenBankProject/OBP-Frontend">OBP-Frontend</a> on GitHub, AGPL licensed</li>
+    </ul>
+  </section>
+
+  <section id="records">
+    <div class="sechead"><h2>What Conformator records</h2></div>
+    <p class="intro">Every record is a dynamic entity in OBP-API, so you can read it through the same APIs, Roles and tools as the rest of your sandbox. The catalogue, the participant register and the reports live in one central space. Everything about a participant's testing lives in that participant's own space.</p>
+    <div class="records">
+      <div class="space">
+        <h3>The central space</h3>
+        <p class="group">The test catalogue</p>
+        <ul>
+            <li><code>conformator_requirement</code>One clause of the rules, which tests trace back to</li>
+            <li><code>conformator_suite</code>A versioned set of tests for one kind of system and one family of APIs</li>
+            <li><code>conformator_test</code>One test: what it checks, the requirements it covers and what counts as a pass</li>
+        </ul>
+        <p class="group">Participants and reports</p>
+        <ul>
+            <li><code>conformator_participant</code>An organisation taking part: a bank, payment service provider, fintech or third-party provider</li>
+            <li><code>conformator_participant_decision</code>A step in a participant's lifecycle, from admitted to graduated</li>
+            <li><code>conformator_report</code>An issued conformance report, public by its reference</li>
+            <li><code>conformator_report_event</code>A report superseded or withdrawn</li>
+        </ul>
+      </div>
+      <div class="space">
+        <h3>Each participant's space</h3>
+        <p class="group">Recorded by the participant</p>
+        <ul>
+            <li><code>conformator_system</code>A sandbox system to be tested, with no secrets</li>
+            <li><code>conformator_pairing</code>Two participants agreeing to be tested together, for interoperability</li>
+            <li><code>conformator_run</code>One run of a suite version against a system</li>
+            <li><code>conformator_result</code>The outcome of one test in one run, never changed</li>
+            <li><code>conformator_schedule</code>Regular runs of a suite, for regression checks</li>
+            <li><code>conformator_submission</code>A system put forward for the regulator's review</li>
+            <li><code>conformator_evidence</code>Evidence for a test a person decides, with files attached</li>
+            <li><code>conformator_waiver_request</code>A request to waive one test</li>
+            <li><code>conformator_appeal</code>A challenge to a result or a decision</li>
+        </ul>
+        <p class="group">Recorded by the regulator</p>
+        <ul>
+            <li><code>conformator_review_assignment</code>A reviewer assigned to a submission</li>
+            <li><code>conformator_assessment</code>A reviewer's verdict on evidence, or on a disputed result</li>
+            <li><code>conformator_waiver_decision</code>The decision on a waiver, with its end date</li>
+            <li><code>conformator_appeal_decision</code>The outcome of an appeal</li>
+            <li><code>conformator_approval</code>The final decision on a submission, by an independent approver</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="name">
+    <div class="sechead"><h2>Why Conformator</h2></div>
+    <div class="name">
+      <img src="img/mark.svg" alt="" width="160" height="160">
+      <div>
+        <p class="intro"><i>Conformator</i> is Latin for "one who shapes", from <i>conformare</i>, "to shape alike". The regulator sets the shape, and Conformator checks that each participant's API fits it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="talk">
+    <div class="sechead"><h2>Talk to us</h2></div>
+    <div class="contact">
+      <p>Setting up an open banking sandbox, or a conformance programme for the firms you supervise? Tell us about it, and we will show you Conformator testing against your own standard.</p>
+      <p class="mailto"><a href="mailto:contact@tesobe.com?subject=Conformator">contact@tesobe.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="stats">
+      <span><a href="https://www.tesobe.com">TESOBE GmbH</a> · Innovating in Berlin since 2004</span>
+      <span><a href="https://www.openbankproject.com">Open Bank Project</a> since 2010</span>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
